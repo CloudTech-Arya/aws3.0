@@ -17,7 +17,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
 
-      - nmae: deploy to s3
+      - name: deploy to s3
         run: |
           aws s3 sync . s3://cmtr-4fu4lx6s-bucket-1793237833
       
